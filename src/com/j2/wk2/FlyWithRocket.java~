@@ -1,0 +1,6 @@
+package com.j2.wk2;
+public lass FlyRocketPowered implemets FlyBehavior{
+  public void fly(){
+    System.out.println("fly with Rocket");
+  }
+}
