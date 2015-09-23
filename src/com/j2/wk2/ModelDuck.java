@@ -1,7 +1,7 @@
 package com.j2.wk2;
 
 public class ModelDuck extends Duck{
-  public ModelDuck(){
+  public ModelDuck() {
     flyBehavior =  new FlyNoWay();
     quackBehavior = new Quack();
   }

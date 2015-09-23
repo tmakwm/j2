@@ -1,7 +1,6 @@
-package com.j2.wk3;
-
+package com.j2.wk2;
 public class Quack implements QuackBehavior{
-  public void quack(){
+  public void Quack(){
     System.out.println("Quack");
   }
 }

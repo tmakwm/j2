@@ -1,5 +1,5 @@
 package com.j2.wk2;
 
 public interface FlyBehavior{
-  public void quack();
+  public void fly();
 }
