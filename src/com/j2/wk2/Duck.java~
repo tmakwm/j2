@@ -1,14 +1,14 @@
 package com.j2.wk2;
 public abstract class Duck{
   public Duck(){}
-    FlyBehavior flyBehavior;
-   QuakBehavior quakBehavior;
+   FlyBehavior flyBehavior;
+   QuackBehavior quackBehavior;
   public void swim(){
     System.out.println("all duck swim!:");
   }
   abstract void display();
   public void performQuack(){
-      quackBehavior.quack();
+      quackBehavior.Quack();
   }
   public void performFly(){
     flyBehavior.fly();
@@ -19,3 +19,4 @@ public abstract class Duck{
   public void setQuackBehavior(QuackBehavior qb){
     quackBehavior = qb;
   }
+}

@@ -4,7 +4,7 @@ public abstract class Duck{
    FlyBehavior flyBehavior;
    QuackBehavior quackBehavior;
   public void swim(){
-    System.out.println("all duck swim!:");
+    System.out.println("all duck float, even decoys!:");
   }
   abstract void display();
   public void performQuack(){
