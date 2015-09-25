@@ -1,11 +1,11 @@
 package com.j2.observer;
 
-public class CurrentconditionsDisplay implements Observer{
-  private float temperature;
+public class ForecastDisplay implements Observer{
+   private float temperature;
   private float humidity;
   private Subject weatherData;
   
-  public CurrentconditionsDisplay(Subject weatherData){
+  public ForecastDisplay(Subject weatherData){
     this.weatherData = weatherData;
     weatherData.registerObserver(this);
   }
@@ -18,4 +18,3 @@ public class CurrentconditionsDisplay implements Observer{
     System.out.println("current conditions; "+temperature+"f degrees   "+humidity+"% humidity");
   }
 }
-  

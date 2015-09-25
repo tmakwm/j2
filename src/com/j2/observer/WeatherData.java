@@ -1,4 +1,5 @@
 package com.j2.observer;
+
 import java.util.*;
 public class WeatherData implements Subject{
   private ArrayList observers;
@@ -32,5 +33,13 @@ public class WeatherData implements Subject{
     this.pressure = pressure;
     measurementsChanged();
   }
-  
+  public float getTemperature(){
+    return temperature;
+  }
+  public float getHumidity(){
+    return humidity;
+  }
+  public float getPressure(){
+    return pressure;
+  }
 }
