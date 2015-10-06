@@ -1,0 +1,10 @@
+package com.j2.decorator;
+
+public class HouseBlend extends Beverage{
+  public DarkRoast(){
+    description = "House Blend Coffe";
+  }
+  public double cost(){
+    return .99;
+  }
+}a
