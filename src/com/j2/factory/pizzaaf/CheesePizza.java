@@ -6,10 +6,13 @@ public class CheesePizza extends Pizza{
     this.ingredientFactory = ingredientFactory;
     name = "Cheese Pizza";
   }
-  void prepare(){
+  public void prepare(){
     System.out.println("preparing" +name );
-    dough = ingredientFactory.createDough();
-    cheese = ingredientFactory.createCheese();
+    Dough dough = ingredientFactory.createDough();
+    Cheese cheese = ingredientFactory.createCheese();
+    description = dough.toString()+", "+cheese.toString();
   }
+
+}
   
     
