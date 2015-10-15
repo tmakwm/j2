@@ -3,9 +3,7 @@ package com.j2.factory.pizzaaf;
 public abstract class Pizza{
    String name;
    String description;
-   public void prepare(){
-     System.out.println("preparing...");
-   }
+   public abstract void prepare();
    void bake(){
     System.out.println("baking...");
   }
