@@ -1,4 +1,4 @@
-package com.j2.iterator.dinermerger.after;
+package com.j2.iterator.dinermerger.case1;
 import java.util.ArrayList;
 public class PanMenu implements Menu{
   ArrayList menuItems;

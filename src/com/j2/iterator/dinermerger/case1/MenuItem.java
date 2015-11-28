@@ -1,4 +1,4 @@
-package com.j2.iterator.dinermerger.after;
+package com.j2.iterator.dinermerger.case1;
 
 public class MenuItem{
 String name;
