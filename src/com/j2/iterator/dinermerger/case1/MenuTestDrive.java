@@ -6,6 +6,7 @@ public class MenuTestDrive{
     DinerMenu dm = new DinerMenu();
     Waitress w = new Waitress(pm, dm);
     w.printMenu();
-
+    System.out.println("for vegetarian");
+    w.printVegetarianMenu();
   }
 }
