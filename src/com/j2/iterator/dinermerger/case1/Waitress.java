@@ -19,7 +19,9 @@ public class Waitress{
      System.out.println(menuItem.getName() );
      System.out.println(menuItem.getDescription());
      System.out.println(menuItem.getPrice());
-
    }
+ }
+ public void printVegetarianMenu(){
+   
  }
 }
