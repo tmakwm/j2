@@ -1,8 +1,8 @@
 package com.j2.state.gumballwinnerstate;
 
-public class WinnerState implements State{
+public class SoldState implements State{
   GumballMachine gm;
-  public WinnerState(GumballMachine gm){
+  public SoldState(GumballMachine gm){
     this.gm = gm;
   }
   public void insertQuarter(){
@@ -17,18 +17,9 @@ public class WinnerState implements State{
     gm.setState(gm.getSoldState());
   }   
    public void dispense(){    
-      System.out.println("you 're winner you get two gumballs");
+      System.out.println("gumball dispensed");
       if(gm.getCount() >0){
-        System.out.println("One gumball dispensed");
-        gm.setCount(gm.getCount()-1);
-        if(gm.getCount()>0){
-          System.out.println("second gumball dispensed");
-          gm.setCount(gm.getCount()-1);
-        }
-        if(gm.getCount()==0){
-          System.out.println("sold out");
-        gm.setState(gm.getSoldOutState());
-        }
+        gm.setState(gm.getNoQuarterState());
       }
       else{
         System.out.println("sold out");

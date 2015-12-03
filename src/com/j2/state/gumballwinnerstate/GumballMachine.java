@@ -1,5 +1,6 @@
 package com.j2.state.gumballwinnerstate;
 
+
 public class GumballMachine{
   State soldOutState;
   State noQuarterState;
@@ -24,6 +25,9 @@ public class GumballMachine{
   }
   public int getCount(){
     return count;
+  }
+  public void setCount(int count){
+    this.count =count;
   }
   public void setState(State state){
    this.state = state; 
