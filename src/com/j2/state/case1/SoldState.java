@@ -8,15 +8,16 @@ public class SoldState implements State{
   public void error(){
    }
   public void insertQuarter(){
-    System.out.println("wait we'ere already giving you a gumball");      
+    System.out.println("wait we'ere already giving you a gumball");  
+        gm.setState(gm.getErrorState());
   }
    public void ejectQuarter(){    
     System.out.println("sorry you already turned the crank");
-    gm.setState(gm.getNoQuarterState());    
+    gm.setState(gm.getErrorState());
   }
    public void turnCrank(){
     System.out.println("turning twice doesn't get you another gumball");
-    gm.setState(gm.getSoldState());
+    gm.setState(gm.getErrorState());
   }   
    public void dispense(){    
       System.out.println("gumball dispensed");

@@ -9,6 +9,7 @@ public class HasQuarterState implements State{
    }
   public void insertQuarter(){
     System.out.println("YOU CAN NOT INSERT ANOTHER QUARTER");      
+    gm.setState(gm.getErrorState());
   }
    public void ejectQuarter(){    
     System.out.println("Quarter returned");
@@ -20,6 +21,7 @@ public class HasQuarterState implements State{
   }   
    public void dispense(){    
       System.out.println("no gumball dispensed");
+          gm.setState(gm.getErrorState());
   }
    
    public String toString(){
